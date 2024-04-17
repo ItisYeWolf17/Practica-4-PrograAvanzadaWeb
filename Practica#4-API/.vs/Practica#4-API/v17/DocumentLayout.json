@@ -63,15 +63,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Practica#4-API",
+              "Title": "Practica#4-API.csproj",
               "DocumentMoniker": "E:\\GITHUB\\Practica-4-PrograAvanzadaWeb\\Practica#4-API\\Practica#4-API\\Practica#4-API.csproj",
               "RelativeDocumentMoniker": "Practica#4-API\\Practica#4-API.csproj",
               "ToolTip": "E:\\GITHUB\\Practica-4-PrograAvanzadaWeb\\Practica#4-API\\Practica#4-API\\Practica#4-API.csproj",
               "RelativeToolTip": "Practica#4-API\\Practica#4-API.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-17T22:20:41.308Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-17T22:20:41.308Z"
             },
             {
               "$type": "Document",
@@ -83,8 +82,7 @@
               "RelativeToolTip": "Practica#4-API\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T22:14:42.25Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-17T22:14:42.25Z"
             },
             {
               "$type": "Document",
@@ -96,8 +94,7 @@
               "RelativeToolTip": "Practica#4-API\\Entities\\Principal.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAABHwBQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T22:04:36.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-17T22:04:36.789Z"
             },
             {
               "$type": "Document",
@@ -109,8 +106,7 @@
               "RelativeToolTip": "Practica#4-API\\Controllers\\PrincipalController.cs",
               "ViewState": "AQIAABcAAAAAAAAAAAAzwCEAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T19:24:23.019Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-17T19:24:23.019Z"
             },
             {
               "$type": "Document",
