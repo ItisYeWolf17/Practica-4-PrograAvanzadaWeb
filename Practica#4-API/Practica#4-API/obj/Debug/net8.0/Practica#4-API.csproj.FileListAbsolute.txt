@@ -38,3 +38,7 @@ E:\GITHUB\Practica-4-PrograAvanzadaWeb\Practica#4-API\Practica#4-API\obj\Debug\n
 E:\GITHUB\Practica-4-PrograAvanzadaWeb\Practica#4-API\Practica#4-API\obj\Debug\net8.0\Practica#4-API.pdb
 E:\GITHUB\Practica-4-PrograAvanzadaWeb\Practica#4-API\Practica#4-API\obj\Debug\net8.0\Practica#4-API.genruntimeconfig.cache
 E:\GITHUB\Practica-4-PrograAvanzadaWeb\Practica#4-API\Practica#4-API\obj\Debug\net8.0\ref\Practica#4-API.dll
+E:\GITHUB\Practica-4-PrograAvanzadaWeb\Practica#4-API\Practica#4-API\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+E:\GITHUB\Practica-4-PrograAvanzadaWeb\Practica#4-API\Practica#4-API\bin\Debug\net8.0\Scrutor.dll
+E:\GITHUB\Practica-4-PrograAvanzadaWeb\Practica#4-API\Practica#4-API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.dll
+E:\GITHUB\Practica-4-PrograAvanzadaWeb\Practica#4-API\Practica#4-API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
