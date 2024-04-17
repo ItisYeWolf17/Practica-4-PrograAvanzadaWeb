@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "E:\\GITHUB\\Practica-4-PrograAvanzadaWeb\\Practica#4-API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8D1345CD-3181-4312-A0E7-2E1F36BD6BEF}|Practica#4-API\\Practica#4-API.csproj|e:\\github\\practica-4-prograavanzadaweb\\practica#4-api\\practica#4-api\\controllers\\abonocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1345CD-3181-4312-A0E7-2E1F36BD6BEF}|Practica#4-API\\Practica#4-API.csproj|solutionrelative:practica#4-api\\controllers\\abonocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8D1345CD-3181-4312-A0E7-2E1F36BD6BEF}|Practica#4-API\\Practica#4-API.csproj|e:\\github\\practica-4-prograavanzadaweb\\practica#4-api\\practica#4-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D1345CD-3181-4312-A0E7-2E1F36BD6BEF}|Practica#4-API\\Practica#4-API.csproj|solutionrelative:practica#4-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1345CD-3181-4312-A0E7-2E1F36BD6BEF}|Practica#4-API\\Practica#4-API.csproj|e:\\github\\practica-4-prograavanzadaweb\\practica#4-api\\practica#4-api\\controllers\\principalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1345CD-3181-4312-A0E7-2E1F36BD6BEF}|Practica#4-API\\Practica#4-API.csproj|solutionrelative:practica#4-api\\controllers\\principalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8D1345CD-3181-4312-A0E7-2E1F36BD6BEF}|Practica#4-API\\Practica#4-API.csproj|e:\\github\\practica-4-prograavanzadaweb\\practica#4-api\\practica#4-api\\practica#4-api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{8D1345CD-3181-4312-A0E7-2E1F36BD6BEF}|Practica#4-API\\Practica#4-API.csproj|solutionrelative:practica#4-api\\practica#4-api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D1345CD-3181-4312-A0E7-2E1F36BD6BEF}|Practica#4-API\\Practica#4-API.csproj|e:\\github\\practica-4-prograavanzadaweb\\practica#4-api\\practica#4-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8D1345CD-3181-4312-A0E7-2E1F36BD6BEF}|Practica#4-API\\Practica#4-API.csproj|solutionrelative:practica#4-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{8D1345CD-3181-4312-A0E7-2E1F36BD6BEF}|Practica#4-API\\Practica#4-API.csproj|e:\\github\\practica-4-prograavanzadaweb\\practica#4-api\\practica#4-api\\entities\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1345CD-3181-4312-A0E7-2E1F36BD6BEF}|Practica#4-API\\Practica#4-API.csproj|solutionrelative:practica#4-api\\entities\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 222,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,41 +62,63 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Practica#4-API.csproj",
               "DocumentMoniker": "E:\\GITHUB\\Practica-4-PrograAvanzadaWeb\\Practica#4-API\\Practica#4-API\\Practica#4-API.csproj",
               "RelativeDocumentMoniker": "Practica#4-API\\Practica#4-API.csproj",
               "ToolTip": "E:\\GITHUB\\Practica-4-PrograAvanzadaWeb\\Practica#4-API\\Practica#4-API\\Practica#4-API.csproj",
               "RelativeToolTip": "Practica#4-API\\Practica#4-API.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAOAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-17T18:18:28.674Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-17T22:20:41.308Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\GITHUB\\Practica-4-PrograAvanzadaWeb\\Practica#4-API\\Practica#4-API\\appsettings.json",
-              "RelativeDocumentMoniker": "Practica#4-API\\appsettings.json",
-              "ToolTip": "E:\\GITHUB\\Practica-4-PrograAvanzadaWeb\\Practica#4-API\\Practica#4-API\\appsettings.json",
-              "RelativeToolTip": "Practica#4-API\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-17T18:17:57.406Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\GITHUB\\Practica-4-PrograAvanzadaWeb\\Practica#4-API\\Practica#4-API\\Program.cs",
               "RelativeDocumentMoniker": "Practica#4-API\\Program.cs",
               "ToolTip": "E:\\GITHUB\\Practica-4-PrograAvanzadaWeb\\Practica#4-API\\Practica#4-API\\Program.cs",
               "RelativeToolTip": "Practica#4-API\\Program.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T18:15:37.682Z",
+              "WhenOpened": "2024-04-17T22:14:42.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Principal.cs",
+              "DocumentMoniker": "E:\\GITHUB\\Practica-4-PrograAvanzadaWeb\\Practica#4-API\\Practica#4-API\\Entities\\Principal.cs",
+              "RelativeDocumentMoniker": "Practica#4-API\\Entities\\Principal.cs",
+              "ToolTip": "E:\\GITHUB\\Practica-4-PrograAvanzadaWeb\\Practica#4-API\\Practica#4-API\\Entities\\Principal.cs",
+              "RelativeToolTip": "Practica#4-API\\Entities\\Principal.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAABHwBQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T22:04:36.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PrincipalController.cs",
+              "DocumentMoniker": "E:\\GITHUB\\Practica-4-PrograAvanzadaWeb\\Practica#4-API\\Practica#4-API\\Controllers\\PrincipalController.cs",
+              "RelativeDocumentMoniker": "Practica#4-API\\Controllers\\PrincipalController.cs",
+              "ToolTip": "E:\\GITHUB\\Practica-4-PrograAvanzadaWeb\\Practica#4-API\\Practica#4-API\\Controllers\\PrincipalController.cs",
+              "RelativeToolTip": "Practica#4-API\\Controllers\\PrincipalController.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAzwCEAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T19:24:23.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AbonoController.cs",
+              "DocumentMoniker": "E:\\GITHUB\\Practica-4-PrograAvanzadaWeb\\Practica#4-API\\Practica#4-API\\Controllers\\AbonoController.cs",
+              "RelativeDocumentMoniker": "Practica#4-API\\Controllers\\AbonoController.cs",
+              "ToolTip": "E:\\GITHUB\\Practica-4-PrograAvanzadaWeb\\Practica#4-API\\Practica#4-API\\Controllers\\AbonoController.cs",
+              "RelativeToolTip": "Practica#4-API\\Controllers\\AbonoController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAIBFwBgAAABeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T19:23:45.7Z",
               "EditorCaption": ""
             }
           ]

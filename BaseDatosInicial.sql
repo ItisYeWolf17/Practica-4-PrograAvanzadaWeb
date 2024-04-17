@@ -57,3 +57,54 @@ USE [master]
 GO
 ALTER DATABASE [PracticaS13] SET  READ_WRITE 
 GO
+
+USE PracticaS13
+GO
+
+CREATE PROCEDURE SP_REGISTRAR_ABONO (
+	@COMPRA DECIMAL(18,2),
+	@MONTO DECIMAL(18,2)
+) AS
+BEGIN 
+	DECLARE @SALDO DECIMAL(18,2);
+	DECLARE @SALDOFINAL DECIMAL(18,2);
+
+	SELECT @SALDO = Saldo
+	FROM [dbo].Principal
+	WHERE Id_Compra = @COMPRA;
+
+	IF  @MONTO <= @SALDO
+		BEGIN
+			INSERT INTO [dbo].Abonos (Id_Compra, Monto, Fecha) VALUES (@COMPRA, @MONTO, SYSDATETIME());
+
+			UPDATE [dbo].Principal
+					SET Saldo = @SALDO - @MONTO
+					WHERE Id_Compra = @COMPRA;
+
+			SELECT @SALDOFINAL = Saldo
+			FROM [dbo].Principal
+			WHERE Id_Compra = @COMPRA;
+
+			IF @SALDOFINAL = 0
+				BEGIN
+					UPDATE [dbo].Principal
+					SET Estado = 'Cancelado'
+					WHERE Id_Compra = @COMPRA;
+				END
+					
+
+			SELECT @@IDENTITY 'Id_Abono';
+		END
+	ELSE
+		BEGIN
+			SELECT -1 'Id_Abono';
+		END
+END
+GO
+
+CREATE PROCEDURE SP_CONSULTAR_COMPRAS AS
+BEGIN
+	SELECT * FROM [dbo].Principal
+	ORDER BY CASE WHEN Estado = 'Pendiente' THEN 0 ELSE 1 END, Precio
+END
+GO
