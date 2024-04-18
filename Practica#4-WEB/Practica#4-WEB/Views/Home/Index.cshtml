@@ -1,7 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
+@model List<Practica_4_Web.Models.Principal>
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-8 offset-md-2">
@@ -20,20 +20,16 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>Dato 1</td>
-                                    <td>Dato 2</td>
-                                    <td>Dato 3</td>
-                                    <td>Dato 4</td>
-                                    <td>Dato 5</td>
-                                </tr>
-                                <tr>
-                                    <td>Dato 6</td>
-                                    <td>Dato 7</td>
-                                    <td>Dato 8</td>
-                                    <td>Dato 9</td>
-                                    <td>Dato 10</td>
-                                </tr>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.Id_Compra</td>
+                                        <td>@item.Descripcion</td>
+                                        <td>@item.Precio</td>
+                                        <td>@item.Saldo</td>
+                                        <td>@item.Estado</td>
+                                    </tr>
+                                }
                             </tbody>
                         </table>
                     </div>

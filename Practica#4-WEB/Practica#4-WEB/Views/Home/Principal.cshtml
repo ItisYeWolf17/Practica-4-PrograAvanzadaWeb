@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model List<Practica_4_Web.Models.Principal>
+
+<table>
+    <thead>
+        <tr>
+            <th>Id Compra</th>
+            <th>Descripción</th>
+            <th>Precio</th>
+            <th>Saldo</th>
+            <th>Estado</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id_Compra</td>
+                <td>@item.Descripcion</td>
+                <td>@item.Precio</td>
+                <td>@item.Saldo</td>
+                <td>@item.Estado</td>
+            </tr>
+        }
+    </tbody>
+</table>
