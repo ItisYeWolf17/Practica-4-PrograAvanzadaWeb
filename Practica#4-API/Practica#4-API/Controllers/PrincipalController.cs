@@ -20,7 +20,7 @@ namespace Practica_4_API.Controllers
 
                 var resultado = db.Query<Principal>("SP_CONSULTAR_COMPRAS", commandType: CommandType.StoredProcedure).ToList();
 
-                if(resultado == null)
+                if( resultado == null)
                 {
                     answer.Mensaje = "No hay compras realizadas...";
                     answer.Codigo = "-1";

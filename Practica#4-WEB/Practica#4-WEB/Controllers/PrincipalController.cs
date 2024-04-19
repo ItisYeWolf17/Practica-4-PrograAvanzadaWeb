@@ -1,25 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Practica_4_API.Entities;
+using Practica_4_WEB.Entities;
+using Practica_4_WEB.Services;
 using System.Net.Http.Json;
 
 namespace Practica_4_Web.Controllers
 {
-    public class PrincipalController : Controller
+    public class PrincipalController (IPrincipalModel _principalModel) : Controller
     {
-        private readonly HttpClient _httpClient;
-
-        public PrincipalController(IHttpClientFactory httpClientFactory)
+        [HttpGet]
+        public IActionResult ConsultarServicios()
         {
-            _httpClient = httpClientFactory.CreateClient();
-        }
-
-        public async Task<IActionResult> Index()
-        {
-            var response = await _httpClient.GetAsync("https://localhost:5001/api/Principal");
-            response.EnsureSuccessStatusCode();
-            var resultado = await response.Content.ReadFromJsonAsync<PrincipalRespuesta>();
-
-            return View(resultado.datos);
+            var resp = _principalModel.ConsultarPrincipal();
+            return View(resp!.datos);
         }
     }
 }

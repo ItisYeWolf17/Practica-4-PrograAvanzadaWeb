@@ -1,7 +1,17 @@
+
+using Practica_4_WEB.Models;
+using Practica_4_WEB.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddSession();
+builder.Services.AddHttpClient();
+builder.Services.AddHttpContextAccessor();
+
+
+builder.Services.AddSingleton<IPrincipalModel, PrincipalModel>();
 
 var app = builder.Build();
 
