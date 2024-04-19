@@ -5,6 +5,7 @@ using Practica_4_WEB.Models;
 using Practica_4_WEB.Services;
 using System.Diagnostics;
 using System.Net.Http;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Practica_4_WEB.Controllers
 {
@@ -13,6 +14,7 @@ namespace Practica_4_WEB.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly HttpClient _httpClient;
         private readonly IPrincipalModel _principalModel;
+        private readonly IAbonoModel _abonoModel;
         public HomeController(ILogger<HomeController> logger, IPrincipalModel principalModel)
         {
             _logger = logger;
@@ -23,13 +25,24 @@ namespace Practica_4_WEB.Controllers
         public IActionResult Index()
         {
             var resp = _principalModel.ConsultarPrincipal();
+
             return View(resp!.datos);
 
         }
 
-        public IActionResult Privacy()
+        public IActionResult Privacy(Abono entidad)
         {
-            return View();
+            var resp = _abonoModel.RegistrarAbono(entidad);
+
+            if (resp?.Codigo == "1")
+            {
+                return RedirectToAction("ConsultarPrincipal", "Principal");
+            }
+            else
+            {
+                ViewBag.MsjPantalla = resp?.Mensaje;
+                return View();
+            }
         }
 
         public IActionResult Principal()

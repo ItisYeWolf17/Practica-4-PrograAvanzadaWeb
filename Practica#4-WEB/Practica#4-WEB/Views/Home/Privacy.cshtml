@@ -3,7 +3,7 @@
 }
 <h1>@ViewData["Title"]</h1>
 
-<div class="container mt-5">
+@* <div class="container mt-5">
     <div class="row">
         <div class="col-md-8 offset-md-2">
             <div class="card">
@@ -69,5 +69,99 @@
             </div>
         </div>
     </div>
-</div>
+</div>*@
 
+
+
+
+<form method="post">
+    <div class="form-group">
+        <label for="Id_Compra">Purchase</label>
+        <select id="Id_Compra" name="Id_Compra" class="form-control" asp-items="@(new SelectList(Model.Purchases, "Id_Compra", "Descripcion"))">
+            <option value="">Select a purchase</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="PreviousBalance">Previous Balance</label>
+        <input type="text" id="PreviousBalance" name="PreviousBalance" class="form-control" readonly />
+    </div>
+    <div class="form-group">
+        <label for="Credit">Credit</label>
+        <input type="number" id="Credit" name="Credit" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Pay</button>
+</form>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            LoadPurchases();
+
+            $('#Id_Compra').change(function () {
+                LoadPreviousBalance($(this).val());
+            });
+        });
+
+        $('form').submit(function (e) {
+            e.preventDefault();
+
+            // Get the form data
+            var formData = {
+                Id_Compra: $('#Id_Compra').val(),
+                Monto: $('#Credit').val()
+            };
+
+            // Execute the stored procedure
+            ExecuteStoredProcedure(formData);
+        });
+
+        function LoadPurchases() {
+            $.ajax({
+                type: 'GET',
+                url: '/Principal',
+                success: function (data) {
+                    var select = $('#Id_Compra');
+                    select.empty();
+                    select.append('<option value="">Seleccione una compra</option>');
+
+                    $.each(data, function (index, item) {
+                        if (item.Estado === 'Pendiente') {
+                            select.append('<option value="' + item.Id_Compra + '">' + item.Descripcion + '</option>');
+                        }
+                    });
+                }
+            });
+        }
+
+        function LoadPreviousBalance(idCompra) {
+            if (idCompra) {
+                $.ajax({
+                    type: 'GET',
+                    url: '/Principal/ObtenerBalance',
+                    data: { idCompra: idCompra },
+                    success: function (data) {
+                        $('#PreviousBalance').val(data);
+                    }
+                });
+            } else {
+                $('#PreviousBalance').val('');
+            }
+        }
+        function ExecuteStoredProcedure(formData) {
+            $.ajax({
+                type: 'POST',
+                url: '/Abono',
+                data: formData,
+                success: function (data) {
+                    if (data.success) {
+                        // Redirect to the Consultation view
+                        window.location.href = '/Principal';
+                    } else {
+                        // Display an error message
+                        alert('Error registering payment.');
+                    }
+                }
+            });
+        }
+    </script>
+}
