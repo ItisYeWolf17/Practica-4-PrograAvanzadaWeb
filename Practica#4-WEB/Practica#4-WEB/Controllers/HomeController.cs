@@ -1,10 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Practica_4_WEB.Entities;
 using Practica_4_WEB.Models;
 using Practica_4_WEB.Services;
 using System.Diagnostics;
 using System.Net.Http;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace Practica_4_WEB.Controllers
@@ -30,19 +32,39 @@ namespace Practica_4_WEB.Controllers
 
         }
 
-        public IActionResult Privacy(Abono entidad)
+        [HttpGet]
+        public IActionResult Abono()
         {
-            var resp = _abonoModel.RegistrarAbono(entidad);
+            var resp = _principalModel.ConsultarPrincipal();
 
-            if (resp?.Codigo == "1")
+            if (resp != null)
             {
-                return RedirectToAction("ConsultarPrincipal", "Principal");
+                var compras = resp?.datos?.Where(x => x.Estado == "Pendiente").ToList();
+                var opciones = compras?.Select(x => new SelectListItem
+                {
+                    Value = x.Id_Compra.ToString(),
+                    Text = x.Descripcion
+
+                }).ToList();
+
+                ViewBag.SelectList = opciones;
+
+
+                var json = JsonSerializer.Serialize(compras);
+
+                ViewBag.Json = json;
+                return View("Privacy");
             }
             else
             {
                 ViewBag.MsjPantalla = resp?.Mensaje;
                 return View();
             }
+        }
+        [HttpPost]
+        public IActionResult Abono(Abono entidad)
+        {
+            return View();
         }
 
         public IActionResult Principal()
