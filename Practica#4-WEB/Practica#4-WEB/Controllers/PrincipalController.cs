@@ -1,25 +1,35 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Practica_4_API.Entities;
+using Practica_4_WEB.Services;
 using System.Net.Http.Json;
+using System.Text.Json;
 
 namespace Practica_4_Web.Controllers
 {
-    public class PrincipalController : Controller
+    public class PrincipalController(IPrincipalModel _principal) : Controller
     {
-        private readonly HttpClient _httpClient;
-
-        public PrincipalController(IHttpClientFactory httpClientFactory)
+        public ActionResult Index()
         {
-            _httpClient = httpClientFactory.CreateClient();
+            var resp = _principal.ConsultarCompras();
+            if (resp.datos != null)
+            {
+                var compras = resp.datos;
+                return View(compras);
+            }
+            else
+            {
+                return View();
+            }
         }
 
-        public async Task<IActionResult> Index()
+        public JsonResult obtenerCompras()
         {
-            var response = await _httpClient.GetAsync("https://localhost:5001/api/Principal");
-            response.EnsureSuccessStatusCode();
-            var resultado = await response.Content.ReadFromJsonAsync<PrincipalRespuesta>();
-
-            return View(resultado.datos);
+            var resp = _principal.ConsultarCompras();
+            if (resp.datos != null)
+            {
+                var compras = resp.datos.Where(x => x.Estado == "Pendiente").ToList();
+                return Json(compras);
+            }
+            return null;
         }
     }
 }

@@ -1,0 +1,109 @@
+﻿
+@{
+}
+
+<h1>Realizar Abono</h1>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form>
+                <div class="mb-3">
+                    <label for="inputCompra" class="form-label">Compra</label>
+                    <select id="inputCompra" class="form-select">
+                        <option selected>Seleccionar...</option>
+                        <option>Producto 1</option>
+                        <option>Producto 2</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="inputSaldoAnterior" class="form-label">Saldo Anterior</label>
+                    <input type="text" class="form-control" id="inputSaldoAnterior" readonly>
+                </div>
+                <div class="mb-3">
+                    <label for="inputAbono" class="form-label">Abono</label>
+                    <input type="number" class="form-control" id="inputAbono">
+                </div>
+                <div id="alerta">
+
+                </div>
+                <button  class="btn btn-primary" onclick="validarAbono()">Abonar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        cargarCompras();
+
+        $('#inputCompra').change(function () {
+            var compraSeleccionadaId = $(this).val();
+            if (compraSeleccionadaId !== '') {
+                var saldoAnterior = $(this).find('option:selected').data('saldo');
+                $('#inputSaldoAnterior').val(saldoAnterior);
+            } else {
+                $('#inputSaldoAnterior').val('');
+            }
+        });
+    });
+
+    function cargarCompras() {
+        $.ajax({
+            url: '@Url.Action("obtenerCompras", "Principal")',
+            type: 'GET',
+            success: function (response) {
+                $('#inputCompra').empty();
+                $('#inputCompra').append('<option value="" selected>Seleccionar compra...</option>');
+                $.each(response, function (index, compra) {
+                    $('#inputCompra').append('<option value="' + compra.id_Compra + '" data-saldo="' + compra.saldo + '">' + compra.descripcion + '</option>');
+                });
+            },
+            error: function (xhr, status, error) {
+                console.error(error);
+            }
+        });
+    }
+
+    function validarAbono() {
+        var saldo = $('#inputSaldoAnterior').val();
+        var abono = $('#inputAbono').val();
+
+        if (abono <= saldo && abono > 0) {
+            realizarAbono()
+        } else {
+            $('#alerta').text('El abono ingresado no es valido...').addClass('text-danger');
+        }
+    }
+
+    function realizarAbono(){
+        var compra = $('#inputCompra').val();
+        var abono = $('#inputAbono').val();
+
+        var entity = {
+            Id_Compra: parseInt(compra),
+            Monto: parseFloat(abono)
+        };
+
+
+        $.ajax({
+            url: '@Url.Action("Index", "Abono")',
+            type: 'POST',
+            contentType: 'application/json',
+            data: {
+                entity: JSON.stringify(entity)
+            },
+            success: function (response) {
+                if (response.Codigo == '1') {
+                    window.location.href = "@Url.Action("Index", "Principal")"
+                }else{
+                    $('#alerta').text('Error inesperado al realizar el abono').addClass('text-danger');
+                }
+            },
+            error: function (xhr, status, error) {
+                console.error(error);
+            }
+        });
+    }
+</script>

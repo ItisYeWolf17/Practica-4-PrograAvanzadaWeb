@@ -1,0 +1,42 @@
+﻿@using Practica_4_WEB.Entities
+@model IEnumerable<Principal>
+
+@{
+
+}
+
+<h1>Lista de Compras</h1>
+
+<div>
+    @if(Model != null)
+    {
+        <table class="table table-sm table-bordered table-striped" id="listadoCompras" style="width: 100%">
+            <thead>
+                <tr>
+                    <td>Precio</td>
+                    <td>Saldo</td>
+                    <td>Descripcion</td>
+                    <td>Estado</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Precio</td>
+                        <td>@item.Saldo</td>
+                        <td>@item.Descripcion</td>
+                        <td>@item.Estado</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No hay compras que mostrar</p>
+    }
+
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+

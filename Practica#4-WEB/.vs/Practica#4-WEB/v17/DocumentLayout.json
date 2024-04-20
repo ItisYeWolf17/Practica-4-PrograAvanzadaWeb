@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\GITHUB\\Practica-4-PrograAvanzadaWeb\\Practica#4-WEB\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF6DBE2-7304-42C2-8154-34113E316ED5}|Practica#4-WEB\\Practica#4-WEB.csproj|e:\\github\\practica-4-prograavanzadaweb\\practica#4-web\\practica#4-web\\views\\abono\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAF6DBE2-7304-42C2-8154-34113E316ED5}|Practica#4-WEB\\Practica#4-WEB.csproj|solutionrelative:practica#4-web\\views\\abono\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF6DBE2-7304-42C2-8154-34113E316ED5}|Practica#4-WEB\\Practica#4-WEB.csproj|e:\\github\\practica-4-prograavanzadaweb\\practica#4-web\\practica#4-web\\controllers\\principalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAF6DBE2-7304-42C2-8154-34113E316ED5}|Practica#4-WEB\\Practica#4-WEB.csproj|solutionrelative:practica#4-web\\controllers\\principalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF6DBE2-7304-42C2-8154-34113E316ED5}|Practica#4-WEB\\Practica#4-WEB.csproj|e:\\github\\practica-4-prograavanzadaweb\\practica#4-web\\practica#4-web\\entities\\abono.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAF6DBE2-7304-42C2-8154-34113E316ED5}|Practica#4-WEB\\Practica#4-WEB.csproj|solutionrelative:practica#4-web\\entities\\abono.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF6DBE2-7304-42C2-8154-34113E316ED5}|Practica#4-WEB\\Practica#4-WEB.csproj|e:\\github\\practica-4-prograavanzadaweb\\practica#4-web\\practica#4-web\\controllers\\abonocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAF6DBE2-7304-42C2-8154-34113E316ED5}|Practica#4-WEB\\Practica#4-WEB.csproj|solutionrelative:practica#4-web\\controllers\\abonocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 222,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,6 +55,58 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AbonoController.cs",
+              "DocumentMoniker": "E:\\GITHUB\\Practica-4-PrograAvanzadaWeb\\Practica#4-WEB\\Practica#4-WEB\\Controllers\\AbonoController.cs",
+              "RelativeDocumentMoniker": "Practica#4-WEB\\Controllers\\AbonoController.cs",
+              "ToolTip": "E:\\GITHUB\\Practica-4-PrograAvanzadaWeb\\Practica#4-WEB\\Practica#4-WEB\\Controllers\\AbonoController.cs",
+              "RelativeToolTip": "Practica#4-WEB\\Controllers\\AbonoController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAABEwA8AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T07:15:18.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Abono.cs",
+              "DocumentMoniker": "E:\\GITHUB\\Practica-4-PrograAvanzadaWeb\\Practica#4-WEB\\Practica#4-WEB\\Entities\\Abono.cs",
+              "RelativeDocumentMoniker": "Practica#4-WEB\\Entities\\Abono.cs",
+              "ToolTip": "E:\\GITHUB\\Practica-4-PrograAvanzadaWeb\\Practica#4-WEB\\Practica#4-WEB\\Entities\\Abono.cs",
+              "RelativeToolTip": "Practica#4-WEB\\Entities\\Abono.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T07:17:33.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\GITHUB\\Practica-4-PrograAvanzadaWeb\\Practica#4-WEB\\Practica#4-WEB\\Views\\Abono\\Index.cshtml",
+              "RelativeDocumentMoniker": "Practica#4-WEB\\Views\\Abono\\Index.cshtml",
+              "ToolTip": "E:\\GITHUB\\Practica-4-PrograAvanzadaWeb\\Practica#4-WEB\\Practica#4-WEB\\Views\\Abono\\Index.cshtml",
+              "RelativeToolTip": "Practica#4-WEB\\Views\\Abono\\Index.cshtml",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAAAGEAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-20T06:43:18.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PrincipalController.cs",
+              "DocumentMoniker": "E:\\GITHUB\\Practica-4-PrograAvanzadaWeb\\Practica#4-WEB\\Practica#4-WEB\\Controllers\\PrincipalController.cs",
+              "RelativeDocumentMoniker": "Practica#4-WEB\\Controllers\\PrincipalController.cs",
+              "ToolTip": "E:\\GITHUB\\Practica-4-PrograAvanzadaWeb\\Practica#4-WEB\\Practica#4-WEB\\Controllers\\PrincipalController.cs",
+              "RelativeToolTip": "Practica#4-WEB\\Controllers\\PrincipalController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAQwB4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T05:48:13.957Z",
+              "EditorCaption": ""
             }
           ]
         },

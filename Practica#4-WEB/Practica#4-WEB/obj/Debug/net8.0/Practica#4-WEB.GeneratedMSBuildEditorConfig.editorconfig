@@ -18,12 +18,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\GITHUB\Practica-4-PrograAvanzadaWeb\Practica#4-WEB\Practica#4-WEB
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/GITHUB/Practica-4-PrograAvanzadaWeb/Practica\#4-WEB/Practica\#4-WEB/Views/Abono/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvbm9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/GITHUB/Practica-4-PrograAvanzadaWeb/Practica\#4-WEB/Practica\#4-WEB/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/GITHUB/Practica-4-PrograAvanzadaWeb/Practica\#4-WEB/Practica\#4-WEB/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[E:/GITHUB/Practica-4-PrograAvanzadaWeb/Practica\#4-WEB/Practica\#4-WEB/Views/Principal/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpbmNpcGFsXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/GITHUB/Practica-4-PrograAvanzadaWeb/Practica\#4-WEB/Practica\#4-WEB/Views/Shared/Error.cshtml]
